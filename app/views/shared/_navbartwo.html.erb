@@ -1,0 +1,59 @@
+
+<style>               
+  .navbar-dark .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.fa-li {
+  position: relative;
+  left: 0;
+}
+</style>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <%= link_to 'BlockBuster', root_path, class: 'navbar-brand' %>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav me-3">
+        <li class="nav-item">
+          <a class="nav-link active d-flex align-items-center" aria-current="page" href="#"><i
+              class="fas fa-bars pe-2"></i>Menu</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+    
+
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item me-3">
+          <%= link_to 'Clients', clients_path, class: 'nav-link'%>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Movies', movies_path, class: 'nav-link' %>
+        </li>
+      </ul>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
